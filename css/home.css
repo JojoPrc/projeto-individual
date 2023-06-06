@@ -1,6 +1,7 @@
-  /*Reset CSS*/
-* 
+/*Reset CSS*/
+*
 {
+  text-decoration: none;
   padding: 0;
   margin: 0;
   border: 0;
@@ -10,123 +11,72 @@
 body
 {
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  background-image: url('../img/fundo.jpg');
+  font-size: 16px;
+  background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(226, 226, 226),rgb(201, 201, 201))
 }
 
-  /*----Cabecalho----*/
+/*----Cabecalho e rodapé----*/
 
-header
+header,footer
 {
-  padding: 10x;
+  flex-direction: row;
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  width: 100%;
+  align-items: center;
+  height:11.3vh;
 }
-.pai
+
+/*---- para mover as ancoras do cabecalho----*/
+
+.nav
 {
-  padding: 35px;
+  font-size: 20px;
+  padding: 0px;
   width: 100%;
   flex-direction: row;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
-  /*----Ancoras do Cabecalho----*/
+/* efeito do cabecalho e as ancoras */
 
-#icone
+#ancoras
 {
-  display: flex;
-  width: 20%;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  justify-content: end;
+  color: rgb(14, 13, 13);
 }
 
-#contato 
-{  
-  display: flex;
-  width: 20%;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  justify-content: end;
+  #ancoras:hover
+{
+  transform: scale(1.5);
+  color: rgb(128, 45, 161);
 }
 
-#hobby 
-{
-  display: flex;
-  width: 20%;
-  text-decoration: none;
-  color: rgb(2, 2, 2);
-  justify-content: end;
-} 
+/*----Section o Corpo da Pagina----*/
 
-#sobre
+section
 {
-  display: flex;
-  width: 20%;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  justify-content: end;
-}
-
-  /*----Hover----*/
-
-#icone:hover
-{
-  transform: scale(1.2);
-  color: blueviolet;
-}
-#sobre:hover
-{
-  transform: scale(1.2);
-  color: blueviolet;
-}
-#contato:hover
-{
-  transform: scale(1.2);
-  color: blueviolet;
-}
-#hobby:hover
-{
-  transform: scale(1.2);
-  color: blueviolet;
-}
-#rede:hover
-{
-  color: blueviolet;
-}
-
-legend:hover 
-{
-
-  opacity: 1;
-}
-
-  /*----Aside o Corpo da Pagina----*/
-
-aside
-{
+  height: 77.2vh;
   justify-content: center;
   padding: 0px;
   width:100%;
   display: flex;
+  margin-bottom: 1px;
 }
 
-  /*----Imagem da Pagina----*/
+/*----Imagem da Pagina----*/
 
-.foto-eu
+.foto_centro
 { 
-  background-color: rgba(46, 46, 46, 0.938);
+  background-color: rgba(80, 69, 92, 0.938);
   position: relative;
   box-sizing: border-box;
   box-shadow: 2px 2px 2px rgb(32, 1, 61);
-  margin: 20px;
   padding: 0px;
-  height: 650px;
   border: 2px solid rgb(122, 25, 250);
 }
+
+/* Tamnho da imagem */
 
 img
 {
@@ -136,7 +86,7 @@ img
   border-radius: 5px;
 }
 
-  /*----Legenda da Imagem----*/
+/*----Legenda da Imagem----*/
 
 legend
 {
@@ -145,33 +95,34 @@ legend
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   width: 100%;
-  top: 0px;
+  padding: 20px;
   position: absolute;
   font-size:28px;
   color: rgb(255, 255, 255);
   transition: opacity 1s;
 }
 
-  /*----Rodape da pagina----*/
+/* efeito da legenda */
 
-footer
+legend:hover 
 {
-  width: 100%;
-  position: absolute;
-  bottom: 0%;
-  padding: 15px;
-  display: flex;
-  justify-content: end;
-  background-color: rgb(5, 6, 7)
+
+  opacity: 1;
 }
 
+/*----Rodape da pagina----*/
+
+  footer
+{
+  background-image:linear-gradient(to right, rgb(45, 7, 53), #4c0363,rgb(94, 8, 151))
+}
 #rede
 {
+  text-align: center;
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   
 }
-
 
   
   

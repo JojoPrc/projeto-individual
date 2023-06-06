@@ -1,99 +1,62 @@
-  /*Reset CSS*/
+/*Reset CSS*/
 *
 {
+  text-decoration: none;
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
 }
+
 body
 {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background-image: url('../img/fundo.jpg');
+  background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(226, 226, 226),rgb(201, 201, 201))
 }
 
-  /*----Cabecalho----*/
+/*----Cabecalho e rodapé----*/
 
-header
+  header,footer
 {
-  padding: 10x;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
+   flex-direction: row;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height:11.3vh;
 }
-.pai
+
+/*---- para mover as ancoras do cabecalho----*/
+
+.nav
 {
-  padding: 25px;
+  font-size: 20px;
+  padding: 0px;
   width: 100%;
   flex-direction: row;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
-  /*----Ancoras do Cabecalho----*/
-#icone
-{ 
-  text-decoration: none;
-  display: flex;
-  width: 20%;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  justify-content: end;
-}
-#contato 
-{  
-  display: flex;
-  width: 15%;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  justify-content: end;
-}
-#hobby 
+/* efeito do cabecalho e as ancoras */
+
+#ancoras
 {
-  display: flex;
-  width: 20%;
-  text-decoration: none;
-  color: rgb(2, 2, 2);
-  justify-content: end;
-} 
-#sobre
-{
-  display: flex;
-  width: 20%;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  justify-content: end;
+  color: rgb(14, 13, 13);
 }
 
-  /*----Hover----*/
-
-#icone:hover
+  #ancoras:hover
 {
-  transform: scale(1.2);
-  color: blueviolet;
-}
-#sobre:hover
-{
-  transform: scale(1.2);
-  color: blueviolet;
-}
-#contato:hover
-{
-  transform: scale(1.2);
-  color: blueviolet;
-}
-#hobby:hover
-{
-  transform: scale(1.2);
-  color: blueviolet;
+  transform: scale(1.5);
+  color: rgb(128, 45, 161);
 }
 
-  /*----Aside o Corpo da Pagina----*/
+/*----o Corpo da Pagina, juntamente com o texto----*/
 
-aside
+section
 {
+  height: 77.4vh;
   padding: 20px;
   align-items: center;
   display: flex;
@@ -101,40 +64,35 @@ aside
   width: 100%;
 }
 
-  /*----texto da pagina----*/
+/*----texto da pagina----*/
 
-.corpo
+
+.text_box
 {
-  font-size: 20px;
-  width: 890px;
-  padding: 0px;
-  margin: 0px;
+  color: rgba(240, 240, 240, 0.932);
+  border: 3px dashed black;
+  border-radius: 8px;
+  width: 110vh;
   text-align: center;
-}
-h1
-{
   padding: 10px;
-}
-span
-{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: blueviolet;
+  background-image:linear-gradient(to right, rgb(45, 7, 53), #4c0363,rgb(94, 8, 151))
 }
 
-  /*----Rodape da pagina----*/
+/* tag especifica para mexer dentro do corpo do texto */
+
+h1{
+  margin: 15px;
+}
+
+/*----Rodape da pagina----*/
+
 footer
 {
-  color: rgb(248, 248, 248);
-  width: 100%;
-  position: absolute;
-  bottom: 0%;
-  padding: 10px;
-  display: flex;
-  justify-content: end;
-  background-color: rgb(0, 0, 0)
+  background-image:linear-gradient(to right, rgb(45, 7, 53), #4c0363,rgb(94, 8, 151));
 }
 #rede
 {
+  text-align: center;
   text-decoration: none;
   color: aliceblue;
   
